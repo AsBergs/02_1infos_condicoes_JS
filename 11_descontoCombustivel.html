@@ -14,10 +14,23 @@
     */
 
     //ENTRADA
-
-
+const tipoCombustivel = prompt("Álcool(a) ou Gasolina(g)")
+const qtdLitros = prompt("Quantos litros vai querer?:")
     //PROCESSAMENTO
+if(tipoCombustivel === `a` && qtdLitros <= 20){
+    const totalAPagar = qtdLitros * 6.10 - (6,10 / 100) * 4
+document.write(`Seu total a pagar é ${totalAPagar.toFixed(2)}$`)
+}else if(tipoCombustivel === `a` && qtdLitros > 20){
+    const totalAPagar2 = qtdLitros * 6.10 - (6,10 / 100) * 6
+    document.write(`Seu total a pagar é ${totalAPagar2.toFixed(2)}$`)
 
+}else if(tipoCombustivel === `g` && qtdLitros <= 20){
+    const totalAPagar3 = qtdLitros * 6.50 - (6,50 / 100) * 3
+document.write(`Seu total a pagar é ${totalAPagar3.toFixed(2)}$`)
+}else{
+    const totalAPagar4 = qtdLitros * 6.50 - (6,50 / 100) * 5
+document.write(`Seu total a pagar é ${totalAPagar4.toFixed(2)}$`)
+}
     
     //SAÍDA
 

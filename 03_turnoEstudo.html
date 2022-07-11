@@ -12,6 +12,18 @@
     */
 
     //ENTRADA
+    const turno = (prompt(`Informe em que turno você está.  m(matutino), v(vespertino) ou n(noturno)`))
+
+//PROCESSAMENTO
+if (turno ===`m`) {
+  alert(`Bom dia, tenha um ótimo dia!`);
+} else if (turno === `v`) {
+  alert(`Boa tarde, tenha uma ótima tarde!`);
+} else if (turno === `n`) {
+  alert(`Boa noite, tenha uma ótima noite!`);
+} else if (turno !== `m` || `v` ||`n`) {
+  alert(`Valor inválido!`);
+}
 
 
     //PROCESSAMENTO

@@ -11,11 +11,27 @@
     */
 
     //ENTRADA
-
+const pergunta1 = prompt("Telefonou para a vítima?")
+const pergunta2 = prompt("Esteve no local do crime?")
+const pergunta3 = prompt("Mora perto da vítima?")
+const pergunta4 = prompt("Devia para a vítima?")
+const pergunta5 = prompt("Já trabalhou com a vítima?")
 
     //PROCESSAMENTO
+if( `sim`|| `sim` || `não` || `não`||`não`){
+    alert(`Suspeita`)
+}
+else if( `sim` || `sim`|| `sim`|| `não`||`não` && `sim` || `sim`|| `sim`|| `sim`||`não`){
+    alert(`Cúmplice`)
 
+}else if(`sim` || `sim`|| `sim`|| `sim`||`sim`){
+    alert(`Culpado`)
+}else{
+    alert(`Inocente`)
+}
     
+
+
     //SAÍDA
 
 
