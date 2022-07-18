@@ -11,7 +11,7 @@
     */
 
     //ENTRADA
-    alert(`Responda "0" para não e "1" para sim `)
+    
 const pergunta1 = prompt("Telefonou para a vítima?")
 const pergunta2 = prompt("Esteve no local do crime?")
 const pergunta3 = prompt("Mora perto da vítima?")
@@ -19,26 +19,24 @@ const pergunta4 = prompt("Devia para a vítima?")
 const pergunta5 = prompt("Já trabalhou com a vítima?")
 
     //PROCESSAMENTO
-const respostas = pergunta1 + pergunta2 + pergunta3 + pergunta4 + pergunta5
-
-
-
-
-if( respostas == 2){
-    alert(`Suspeita`)
-}
-else if( respostas  > 2 && respostas < 5  ){
-    alert(`Cúmplice`)
-
-}else if(respostas == 5 ){
-    alert(`Culpado`)
-}else{
-    alert(`Inocente`)
-}
-    
-
-
+let grauParticipaçao = 0
+    if(pergunta1 === `sim`) grauParticipaçao = grauParticipaçao + 1
+if (pergunta2 === `sim`) grauParticipaçao++
+if (pergunta3 === `sim`)grauParticipaçao++
+if (pergunta4 === `sim`)grauParticipaçao++
+if (pergunta5 === `sim`)grauParticipaçao++
     //SAÍDA
+if(grauParticipaçao <= 1){
+
+    document.write("Inocente!")
+
+}else if(grauParticipaçao === 2){
+document.write("Suspeito!")
+}else if(grauParticipaçao <= 4){
+    document.write("Cúmplice!")
+}else{
+    document.write("Assasino!")
+}
 
 
 </script>
