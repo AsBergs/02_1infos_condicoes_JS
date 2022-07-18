@@ -8,11 +8,23 @@
     */
 
     //ENTRADA
- 
+ let valorSaque = parseInt(prompt("Qual valor deseja sacar?: "))
 
     //PROCESSAMENTO
-
-    
+    if(valorSaque >= 10 && valorSaque <= 600){
+const notasDe100 = Math.floor (valorSaque / 100)
+valorSaque = valorSaque % 100
+const notasDe50 = Math.floor (valorSaque / 50)
+valorSaque = valorSaque % 50
+const notasDe10 = Math.floor (valorSaque / 10)
+valorSaque = valorSaque % 10
+const notasDe5 = Math.floor (valorSaque / 5)
+const notasDe1 = valorSaque % 5
+document.write(`Você receberá ${notasDe100} notas de cem, ${notasDe50} notas de cinquenta, ${notasDe10} notas de 10, ${notasDe5} notas de 5 e ${notasDe1}`)
+    }
+    else{
+        document.write(`Valor Inválido`)
+    }
     //SAÍDA
 
 
