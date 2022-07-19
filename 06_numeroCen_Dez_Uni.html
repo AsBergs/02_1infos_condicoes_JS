@@ -11,13 +11,16 @@
     */
 
     //ENTRADA
-    
-
-//feito/
-
+    let Numero = parseInt(prompt("Informe um número:"))
 
     //PROCESSAMENTO
-
+    if (Numero < 1000) {
+        const qtdCentenas = Math.floor(Numero / 100)
+        Numero = Numero % 100
+        const qtdDezenas = Math.floor(Numero / 10)
+        const qtdUnidades = Math.floor(Numero % 10)
+        document.write (`Centenas: ${qtdCentenas}</br>Dezenas: ${qtdDezenas}</br> Unidades: ${qtdUnidades}`)
+    }
     
     //SAÍDA
 
